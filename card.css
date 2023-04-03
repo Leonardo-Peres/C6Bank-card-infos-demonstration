@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    z-index: 0;
+}
+h1{
+    color: white;
+    justify-content: center;
+    font-size: 40px;
+    padding: 10px;
+    padding-left: 30%;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    height: 75%;
+}
+.box2{
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 87.6%;
+    width: 50%;
+    right: 0;
+    margin-top: 0;
+    position: absolute;
+    overflow-x: hidden;     
+}
+.imagem{
+    width: 100%;
+    height: 99.4%;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 130px;
+    margin-left: 50px;
+    padding: 30px;
+    gap: 30px;
+    
+}
+h2{
+    color: black;
+    font-size: 25px;
+}
+
+.input{
+    width: 95%;
+    font-size: 15px;
+    border:1px solid black;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+}
+#validade{
+    width: 40%;
+}
+#cvv{
+    width: 40%;
+}
+.val_e_cvv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 6px;
+}
+#submit{
+    background-color: rgba(0, 0, 0, 0.651);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 75%;
+}
+#submit:hover{
+    background-color: rgba(0, 0, 0, 0.76);
+}

